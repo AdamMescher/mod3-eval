@@ -1,22 +1,8 @@
 import React from 'react';
 
-const HouseCard = ({houseData}) => {
-  
-  
-
-  const swornMembers = houseData.swornMembers.map( personURL => {
-    return fetch(`http://localhost:3001/api/v1/character`, 
-    {
-      method: 'POST',
-      headers: {'Content-Type': 'application/json'},
-      body: JSON.stringify( {url: personURL} )
-    } )
-    .then( response => response.json() )
-    .then( parsed =>  )
-  })
-
+const HouseCard = ({houseData, handleCardClick}) => {
   return (
-    <article className="house-card-container" onClick={() => console.log('clicked card')}>
+    <article className="house-card-container" onClick={() => console.log('hi') }>
       <h3>{`House Name: ${houseData.name}`}</h3>
       <p>{`Founded: ${houseData.founded || 'N/A'} `}</p>
       <p className='house-card-list-title'>{`Seats: ${houseData.seats}`}</p>

@@ -1,6 +1,5 @@
 import * as actions from '../../actions/AppActions';
 
-
 describe(`APP ACTIONS`, () => {
   it(`should have a test`, () => {
     const mockHouseData = [{ name: 'Stark' }, { name: 'Tully' }, { name: 'Baratheon'}]
