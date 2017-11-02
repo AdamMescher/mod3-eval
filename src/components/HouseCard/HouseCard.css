@@ -1,0 +1,13 @@
+.house-card-container {
+  border: 2px solid #DBF8FD;
+  border-radius: 6px;
+  height: 500px;
+  width: 260px;
+  padding: 20px;
+  background-color: rgba(124,124,124, 0.3);
+}
+
+.house-card-container p {
+  margin-top: 10px;
+  text-align: left;
+}
